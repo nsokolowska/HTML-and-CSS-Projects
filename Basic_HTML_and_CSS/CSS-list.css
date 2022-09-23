@@ -1,0 +1,12 @@
+ol {
+	list-style-type: lower-alpha;
+	background: #ff9999;
+	color: darkred;
+	padding: 20px;
+}
+ul {
+	list-style-type: square;
+	 background: #F5F5DC;
+	 color: #5F9EA0;
+	padding: 20px;
+}

@@ -1,0 +1,19 @@
+table th, td {
+	border: 2px solid blue;
+}
+td:hover {
+	background-color: Orange;
+	color: Black;
+}
+tr, th {
+	Background-color: BlanchedAlmond;
+	color: Brown;
+	font-size: 40px;
+}
+
+
+tr, td {
+	Background-color: Azure;
+	color: Brown;
+	font-size: 30px;
+}
