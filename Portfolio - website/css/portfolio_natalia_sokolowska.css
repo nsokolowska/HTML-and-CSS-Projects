@@ -1,0 +1,236 @@
+body{
+    margin: 0%;
+}
+/*--NAV--*/
+nav {
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    width: 100%;
+    background-color: rgb(90, 10, 96);
+    z-index: 4;
+    -webkit-animation: moveNav 2s;
+    animation: moveNav 2s;
+}
+@keyframes moveNav {
+    from {top: -10vw}
+    to {top:0vw}
+}
+nav a{
+    float:left;
+    text-align:left;
+    display:block;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover{
+    background-color: rgb(42, 6, 44);
+    color: rgb(109, 18, 115);
+}
+
+.active{
+    background-color:rgb(42, 6, 44);
+    color: rgb(109, 18, 115);
+    font-size: 20px;
+    font-weight: 900;
+}
+.active:hover{
+    background-color: rgb(90, 10, 96);
+    color:rgb(42, 6, 44);
+}
+@media screen and (max-width: 576px) {
+.Nav a{
+    width: 25%; 
+    font-size: 12px;
+}
+}
+/*---NAV---*/
+
+/*---VIDEO---*/
+#Background_Video{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    min-width: 100%;
+    z-index: -1;
+}
+@media screen and (max-width: 576px) {
+    #Background_Video {
+        display: none;
+    }
+}
+/*---VIDEO---*/
+
+/*---VIDEO TEXT---*/
+.video-text {
+   background-color: rgba(42, 6, 44,0.5);
+   position:relative;
+   font-family:'Courier New', Courier, monospace;
+   top: 0;
+   width:100%;
+   color: white;
+   text-align:center;
+   padding: 10px;  
+   -webkit-animation: moveVideoText 4s;
+   animation: moveVideoText 4s;
+}
+
+@keyframes moveVideoText {
+   from {top: -100vw;} 
+   to {top: 0vw;}
+}
+.video-text h1{
+    font-size:50px;
+    font-variant: small-caps;
+}
+.video-text p{
+    font-size:15px;
+}
+.video-text span{
+    font-style: italic;
+}
+
+.video-text h1:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+.video-text p:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+/*---VIDEO TEXT---*/
+img {
+    max-width: 480px;
+    max-height:321px;
+    margin-top:40px;
+    filter:drop-shadow(8px 8px 10px rgb(109, 18, 115)) grayscale(70%);;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter:drop-shadow(8px 8px 10px rgb(109, 18, 115));
+    transition:2s;
+    
+}
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+/*--- ROW AND COLLUMS---*/
+.row {
+    width:100%;
+}
+* {
+    box-sizing: border-box;
+}
+.Column_1{
+    float: left;
+    width:50%;
+    height:400px;
+    display: block;
+    background-color:rgb(90, 10, 96);
+}
+.Column_2 {
+    float:left;
+    width:50%;
+    height:400px;
+    display: block;
+    background-color:rgb(42, 6, 44);
+    text-align: center;
+}
+
+/*--- ROW AND COLLUMS---*/
+
+/*----TEXT---*/
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight:900;
+    font-size: 30px;
+    padding:25px;
+    text-align: center;
+}
+h2:hover {
+    transform: scale(1.3);
+    transition: 3s;
+}
+
+.Column_1 p {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-size:15px;
+    margin:25px;
+    text-align: left;
+}
+.Column_1 a{
+    color:white;
+    font-weight:900;
+}
+
+.Column_1 p:hover{
+    font-weight:600;
+}
+
+/*----TEXT---*/
+
+/*--FORM---*/
+input[type=text] {
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:3px;
+    margin-bottom:10px;
+    padding:7px;
+    width:90%;
+}
+
+input[type=text]:hover {
+    box-shadow: 5px 5px 5px rgb(42, 6, 44);
+}
+input[type=submit]{
+    margin-left:20px;
+    margin-top:10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(42, 6, 44);
+    color:white;
+    font-size:20px;
+    border: 2px soild rgb(42, 6, 44);
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    transform: scale(1.2);
+    background-color:rgb(90, 10, 96);
+    border: 2px soild rgb(42, 6, 44);
+    transition:1s;
+}
+label {
+    margin:20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    color:white;
+}
+label:hover{
+    font-weight:600;
+    
+}
+/*--FORM---*/
+
+/*---FOOTER--*/
+footer{
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    color:white;
+    text-align: center;
+}
+footer:hover {
+    font-size:25px;
+    transition: 2s;
+}
+/*---FOOTER--*/
