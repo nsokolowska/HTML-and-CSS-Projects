@@ -9,9 +9,10 @@
     <body>
         <nav>
             <a class="active" href="#home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#about">About</a>
-            <a href="#github">GitHub</a>
-            <a href="#contact">Contact</a>
+            <a href="#social">My social</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </nav>
         <br>
         <br>
@@ -28,11 +29,63 @@
                 <br>but programming is an extremely creative profession.
                 <br> It&#39;s logic-based creativity.&quot; </span>
                 <br>&#45; John Romero</p>
-                <p>My name is Ntalia Sokolowska. Welcome to my portfolio website. I would like to tell you about my background and experience.
+                <br>
+                <p>My name is Natalia Sokolowska. Welcome to my portfolio website. <br>I would like to tell you about my background and experience.
                     <br> Thank you for coming and please enjoy!</p>
         </div>
         <!--END HOME-->
 
+        <!--SLIDESHOW-->
+        <div id="Slideshow">
+            <div class="Slide_background">
+                <div class="Slideshow_container">
+                     <!--SLide 1-->
+                    <div class="Slide fade">
+                        <img class="Slideshow" src="images/photo_Natalia_Sokolowska.jpg" alt="Picture of me">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!--SLide 2-->
+                    <div class="Slide fade">
+                        <img class="Slideshow" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML_CSS_and_JavaScript">
+                        <div class="text">I'm full-stack web developer,</div>
+                    </div>
+                    <!--SLide 3-->
+                    <div class="Slide fade">
+                        <img class="Slideshow" src="images/net_logo.png" alt="NET">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+                     <!--SLide 4-->
+                    <div class="Slide fade">
+                        <img class="Slideshow" src="images/Python.png" alt="Python">
+                        <div class="text">the most popular programing language Python,</div>
+                    </div>
+                    <!--SLide 5-->
+                    <div class="Slide fade">
+                        <img class="Slideshow" src="images/SQL_and_Database.jpg" alt="SQL_and_Database">
+                        <div class="text">and back end development, datebase and SQL.</div>
+                    </div>
+                    <!--SLide 6-->
+                    <div class="Slide fade">
+                        <img class="Slideshow" src="images/image2.jpg" alt="Contact me">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                 <!--Dots-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--ENDSLIDESHOW-->
         <!--ABOUT-->
         <div class="Row" id="About">
             <div class="Column_2">
@@ -43,48 +96,55 @@
                 <p>I am a web developer who found a passion for coding by loving mathematics.
                     <br><br>In my free time, I love reading books, watching series, and developing myself by learning.             
                     <br><br> I am a graduate of Pitman Training Peterborough's Web Developer course. Additionally, I graduated from several online courses in Java, Python and SQL languages.
-                   <br><br> I am a full-stack web developer and I would like to have the opportunity to work with you on your project. Conact me!</p>        
+                   <br><br> I am a full-stack web developer and I would like to have the opportunity to work with you on your project. Contact me!</p>        
             </div>
         </div>    
         <!--END ABOUT-->
 
-        <!--GITHUB-->
-        <div id="github" class="Row">
+        <!--SOCIAL-->
+        <div id="social" class="Row">
             <div class="Column_1">
-                <h2>GitHub</h2>
-                <p>
-                    You can view my coding projects on my GitHub profile here:                        <br>
-                    <p><a href="https://github.com/nsokolowska" target="_blank">Natalia Sokolowska Github</a></p>
+                <h2>My Social</h2>
+                <p>You can view my coding projects on my GitHub profile here:<br>
+                    <br>
+                    <a href="https://github.com/nsokolowska" target="_blank">Natalia Sokolowska Github</a>
+                </p>
+                <p>More information about me on my Linkedin here:<br>
+                    <br>
+                <a href="https://www.linkedin.com/in/natalia-sokolowska-357a50247/" target="_blank">Natalia Sokolowska Linkedin</a>
                 </p>
             </div>
             <div class="Column_2">
                 <img src="./images/GitHub.png" alt="GitHub image">
             </div>   
         </div>
-        <!--END GITHUB-->
+        <!--END SOCIAL-->
 
         <!--CONTACT-->
-        <div id="contact" class="Row">
-            <div class="Column_2">
-                <img src="./images/image2.jpg" alt="Contact_Image">
-            </div>
-            <div class="Column_1">
-                <h2>Contact</h2>
-                <form action="" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="Form">
+                <form action="https://formspree.io/f/mdovnvqg" method="POST" class="form-container">
+                    <h2>Contact</h2>
+                    <label for="name">Name:</label>
+                        <input type="text" name="Name" placeholder="Please enter your name here">
+                    <label for="email">Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label> 
+                    <label for="Phone">Phone:</label>
+                        <input type="text" id="Phone" name="Phone" placeholder="Please enter your phone number here">
+                    <label for="message">Message:</label> 
                         <input type="text" id="Message" name="Message" placeholder="Please write your message here">      
-                    <input type="submit" value="SUBMIT">
+                    
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn-cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
         <!-- END CONTACT-->
 
         <footer id="footer">
-            <p>&nbsp;<br>&copy;&nbsp;Natalia Sokolowska 2022</p>
+            &nbsp;<br>&copy;&nbsp;Natalia Sokolowska 2022<br>&nbsp;
         </footer>
+        <script src="js/portfolio_natalia.sokolowska.js"></script>
     </body>
 </html>
