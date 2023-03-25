@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width,height=device-height initial-scale=1" />
+        <title>Natalia Sokolowska</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio_natalia_sokolowska.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Social">Social</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a>
+        </nav>
+        <!--MOBILE MENU-->
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="javascript:void(0);" class="active" onclick="moblieMenu()">Menu
+                <i class="fa fa-bars"></i>
+              </a>
+              <div id="myLinks">
+                <a href="#About">About</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Social">Social</a>
+              </div>
+            </div>
+            
+        </div>
+
+
+        <!--MOBILE MENU-->
+
+        <!--HOME-->
+        <div id="Home">
+            <video autoplay muted loop id="Background_Video">
+                <source src="./images/video/background.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="video-text">
+                <h1>Natalia Sokolowska's Portfolio</h1>
+                <p><span>&quot;You might not think that programmers are artists, 
+                    <br>but programming is an extremely creative profession.
+                    <br> It&#39;s logic-based creativity.&quot; </span>
+                    <br>&#45; John Romero</p>
+                    <br>
+                    <p>Welcome to my portfolio website. <br>I would like to tell you about my background and experience.
+                    <br> Thank you for coming and please enjoy!</p>
+            </div>
+        </div>
+        <!--END HOME-->
+
+        <!--ABOUT-->
+        <section id="About" class="Row">
+            <div class="Column_2">
+                <img  class="column_img"src="./images/photo_Natalia_Sokolowska.jpg" alt="Colorful photo of computer">
+            </div>
+            
+            <div class="Column_1">
+                <h2>About</h2>
+                <p>Hello! My name is Natalia. I come from Poland. My passion for coding was found in my love of mathematics. I'm ambitious, curious, enthusiastic, highly motivated and organized.
+                    <br><br>In my free time, I love reading books, watching series and movies, solving math problems, and developing myself by learning. 
+                    <br><br>I am a web developer, and I would like to have the opportunity to work with you on your project. Contact me! </p>        
+            </div>
+            
+        </section>
+
+        <!--END ABOUT-->
+        
+        <!--PROJECTS-->
+        <section id="Projects">
+            <div class="sometext">
+                <h2>My projects</h2>
+            </div>
+            <div class="row">
+                <div class="column_3">
+                    <div class="container">
+                        <img class="black" src="images/html5andcss3.png" alt="HTML5 and CSS3 Logo">
+                        <div class="overlay">
+                            <a class="overlay_text" href="https://github.com/nsokolowska/HTML-and-CSS-Projects" target="_blank">Check</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column_3">
+                    <div class="container">
+                        <img class="white" src="images/net_logo.png" alt="C# and Microsoft .NET Logo">
+                        <div class="overlay">
+                            <a class="overlay_text" href="https://github.com/nsokolowska/C_Projects" target="_blank">Check</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_3">
+                    <div class="container">
+                        <img class="black" src="images/JavaScript.png" alt="JavaScript Logo">
+                        <div class="overlay">
+                            <a class="overlay_text" href="https://github.com/nsokolowska/JavaScript-Projects" target="_blank">Check</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column_3">
+                    <div class="container">
+                        <img class="white" src="images/react.png" alt="React Logo">
+                        <div class="overlay">          
+                            <p class="overlay_text" href="">Pending</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <!--END PROJECTS-->
+
+        <!--SOCIAL-->
+        <section id="Social" class="Row">
+            <div class="column_4">
+                <div class="mini_row">
+                    <div>
+                        <h2>Why should you choose me?</h2>
+                    </div>
+                </div>
+                <div class="mini_row">
+                    <div class="card">
+                        <p>I graduated with Pitman Training Web Developer Diploma and Advanced Software & Web Developer Diploma.</p>
+                    </div>
+                </div>
+                <div class="mini_row">
+                    <div class="card">
+                        <p>I possess knowledge of HTML, CSS, JavaScript, C#, .NET Framework, ASP.NET, MVC, database and SQL.</p>
+                    </div>
+                </div>
+                <div class="mini_row">
+                    <div class="card">
+                        <p>I love coding and problem solving, this is my passion.</p>
+                    </div>
+                </div>
+                <div class="mini_row">
+                    <div class="card">
+                        <p>I am willing to learn and I am doing this every day. Currently, I am studying React.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column_5">
+                <h2>More information</h2>
+                <div class="social_link">
+                    <img src="images/GitHub.png" alt="GitHub">
+                    <a href="https://github.com/nsokolowska" target="_blank">My GitHub profile</a>
+                    <hr/>
+                </div>
+                <div class="social_link">
+                    <img src="images/LinkedInn.png" alt="LinkedInn">
+                    <a href="https://www.linkedin.com/in/natalia-sokolowska-357a50247/" target="_blank">My LinkedInn profile</a>
+                    <hr/>
+                </div>
+                <div class="social_link">
+                    <img src="images/CVLogo.png" alt="CV">
+                    <a href="documents/Natalia Sokolowska.pdf"download target="_blank">My resume</a>
+                    <hr/>
+                </div>
+            </div>
+             
+        </section>
+        <!--END SOCIAL-->
+
+        <!--CONTACT-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="Form">
+                <form action="https://formspree.io/f/mdovnvqg" method="POST" class="form-container">
+                    <h2>Contact</h2>
+                    <label for="name">Name:</label>
+                        <input type="text" name="Name" placeholder="Please enter your name here"/>
+                    <label for="email">Email:</label>
+                        <input type="email" id="Email" name="Email" placeholder="Please enter your email here"/>
+                    <label for="Phone">Phone:</label>
+                        <input type="number" id="Phone" name="Phone" placeholder="Please enter your phone number here"/>
+                    <label for="message">Message:</label> 
+                        <textarea name="message" placeholder="Please write your message here"></textarea>
+                    
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn-cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+        <!-- END CONTACT-->
+        <!--MOBLIE CONTACT-->
+        <div class="mobile-container" id="Contact">
+            <div class="moblie-form" id="Form">
+                <form action="https://formspree.io/f/mdovnvqg" method="POST" class="moblie-form-container">
+                    <h2>Contact</h2>
+                    <label for="name">Name:</label>
+                        <input type="text" name="Name" placeholder="Please enter your name here"/>
+                    <label for="email">Email:</label>
+                        <input type="email" id="Email" name="Email" placeholder="Please enter your email here"/>
+                    <label for="Phone">Phone:</label>
+                        <input type="number" id="Phone" name="Phone" placeholder="Please enter your phone number here"/>
+                    <label for="message">Message:</label> 
+                        <textarea name="message" placeholder="Please write your message here"></textarea>
+                    <button type="submit" class="moblie-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+        <footer id="footer">
+            &nbsp;<br>&copy;&nbsp;Natalia Sokolowska 2023<br>&nbsp;
+        </footer>
+        <script src="js/portfolio_natalia.sokolowska.js"></script>
+    </body>
+</html>
