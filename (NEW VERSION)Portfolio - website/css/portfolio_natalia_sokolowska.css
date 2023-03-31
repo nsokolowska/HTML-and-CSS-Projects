@@ -477,15 +477,21 @@ footer{
         height:100%;
         background-color: rgb(78, 0, 82);
     }
+    h2{
+        font-size:20px;
+    }
+    h2:hover{
+        transform: none;
+    }
     .video-text{
         width:100%;
         height:auto;
     }
     .video-text h1{
-        font-size:20px;
+        font-size:25px;
     }
     .video-text p{
-        font-size:13px;
+        font-size:14px;
     }
     .row{
         display:block;
@@ -497,7 +503,7 @@ footer{
         height:auto;
     }
     .Column_1 p{
-        font-size:13px;
+        font-size:14px;
     }
     .Column_2{
         width:100%;
@@ -520,6 +526,7 @@ footer{
         
     }
     .column_4{
+        margin:auto;
         width:100%;
         height:auto;
         
@@ -540,11 +547,16 @@ footer{
         font-size:11px;
     }
     .column_5{
+        margin:auto;
         width:100%;
         height:auto;
     }
     .column_5 h2{
-        font-size:20px
+        font-size:20px;
+    }
+    
+    .social_link:hover{
+        transform: none;
     }
     .social_link a{
         font-size:12px
@@ -558,24 +570,34 @@ footer{
         
     }
     .moblie-form-container{
+        padding:10px;
         width:100%;
         height:auto;
         background-color: rgb(78, 0, 82);
         display:block;
-        margin-left:3px;
+        
     }
     input[type=text],input[type=email],input[type=number],textarea{
         width:98%;
         font-size:13px;
+        font-family: 'Courier New', Courier, monospace;
     }
     label{
         font-size:13px;
     }
     .moblie-form-container h2{
-        font-size:16px;
+        margin-top:5px;
+        font-size:20px;
     }
     button{
-        width:100%;
+        width:98%;
+        font-size:10px;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(42, 6, 44);
+        color:white;
+    }
+    footer{
+        font-size:5px;
     }
 }   
 
@@ -607,7 +629,7 @@ footer{
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 17px;
         display: block;
       }
            
@@ -627,15 +649,21 @@ footer{
         height:100%;
         background-color: rgb(78, 0, 82);
     }
+    h2{
+        font-size:20px;
+    }
+    h2:hover{
+        transform: none;
+    }
     .video-text{
         width:100%;
         height:auto;
     }
     .video-text h1{
-        font-size:20px;
+        font-size:25px;
     }
     .video-text p{
-        font-size:13px;
+        font-size:14px;
     }
     .row{
         display:block;
@@ -647,7 +675,7 @@ footer{
         height:auto;
     }
     .Column_1 p{
-        font-size:13px;
+        font-size:14px;
     }
     .Column_2{
         width:100%;
@@ -670,6 +698,7 @@ footer{
         
     }
     .column_4{
+        margin:auto;
         width:100%;
         height:auto;
         
@@ -690,11 +719,16 @@ footer{
         font-size:11px;
     }
     .column_5{
+        margin:auto;
         width:100%;
         height:auto;
     }
     .column_5 h2{
-        font-size:20px
+        font-size:20px;
+    }
+    
+    .social_link:hover{
+        transform: none;
     }
     .social_link a{
         font-size:12px
@@ -708,29 +742,38 @@ footer{
         
     }
     .moblie-form-container{
+        padding:10px;
         width:100%;
         height:auto;
         background-color: rgb(78, 0, 82);
         display:block;
-        margin-left:3px;
+        
     }
     input[type=text],input[type=email],input[type=number],textarea{
         width:98%;
         font-size:13px;
+        font-family: 'Courier New', Courier, monospace;
     }
     label{
         font-size:13px;
     }
     .moblie-form-container h2{
-        font-size:16px;
+        margin-top:5px;
+        font-size:20px;
     }
     button{
-        width:100%;
+        width:98%;
+        font-size:10px;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(42, 6, 44);
+        color:white;
     }
+    footer{
+        font-size:5px;
+    } 
 }
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
-
     nav a{
         display:none;
     }
@@ -742,51 +785,57 @@ footer{
         height: auto;
         color: white;
         border-radius: 10px;
-        }
-        
-        .topnav {
+      }
+      
+      .topnav {
         overflow: hidden;
         background-color: rgb(42, 6, 44);
         position: relative;
-        }
-        
-        .topnav #myLinks {
+      }
+      
+      .topnav #myLinks {
         display: none;
-        }
-        
-        .topnav a {
+      }
+      
+      .topnav a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 22px;
+        font-size: 17px;
         display: block;
-        }
-            
-        .topnav a:hover {
+      }
+           
+      .topnav a:hover {
         background-color: #ddd;
         color: black;
-        }
-        
-        .active {
+      }
+      
+      .active {
         background-color: rgb(78, 0, 82);
         color: white;
     
-        }
+      }
     body{
         display:block;
         width:100%;
         height:100%;
         background-color: rgb(78, 0, 82);
     }
+    h2{
+        font-size:20px;
+    }
+    h2:hover{
+        transform: none;
+    }
     .video-text{
         width:100%;
         height:auto;
     }
     .video-text h1{
-        font-size:29px;
+        font-size:25px;
     }
     .video-text p{
-        font-size:20px;
+        font-size:14px;
     }
     .row{
         display:block;
@@ -798,7 +847,7 @@ footer{
         height:auto;
     }
     .Column_1 p{
-        font-size:20px;
+        font-size:14px;
     }
     .Column_2{
         width:100%;
@@ -815,18 +864,19 @@ footer{
         width:50%;
     }
     .sometext{
-        display:none}
+     display:none}
     .container {
         display:block;
         
     }
     .column_4{
+        margin:auto;
         width:100%;
         height:auto;
         
     }
     .mini_row h2{
-        font-size:25px;
+        font-size:20px;
     }
     .mini_row{
         width:100%;
@@ -838,17 +888,22 @@ footer{
         height:auto
     }
     .card p{
-        font-size:19px;
+        font-size:11px;
     }
     .column_5{
+        margin:auto;
         width:100%;
         height:auto;
     }
     .column_5 h2{
-        font-size:25px
+        font-size:20px;
+    }
+    
+    .social_link:hover{
+        transform: none;
     }
     .social_link a{
-        font-size:19px
+        font-size:12px
     }
     .Pop_Up_Button{
         display:none;
@@ -859,24 +914,34 @@ footer{
         
     }
     .moblie-form-container{
+        padding:5px;
         width:100%;
         height:auto;
         background-color: rgb(78, 0, 82);
         display:block;
-        margin-left:3px;
+        
     }
     input[type=text],input[type=email],input[type=number],textarea{
         width:98%;
-        font-size:20px;
+        font-size:13px;
+        font-family: 'Courier New', Courier, monospace;
     }
     label{
-        font-size:20px;
+        font-size:13px;
     }
     .moblie-form-container h2{
-        font-size:25px;
+        margin-top:5px;
+        font-size:20px;
     }
     button{
-        width:100%;
+        width:98%;
+        font-size:10px;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(42, 6, 44);
+        color:white;
+    }
+    footer{
+        font-size:5px;
     }
 }
 
